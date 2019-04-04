@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <script >
+       function Covertfunc(){
+
+            foot = int(document.getElementById("input1"));
+            inches = int(document.getElementById("input2"));
+            total_Cen = foot * 30.48 + inches * 2.54;
+    document.getElementById("display").innerHTML= string(total_Cen);
+       } 
+
+        </script>
+ <div>
+     <label> Foot</label>
+     <input type="text" id="input1">
+     <label> inches</label>
+     <input type="text" id="input2">
+     <button onclick="Covertfunc()" id = "Conv">Convert</button>
+ </div>
+</body>
+</html>
